@@ -17,7 +17,7 @@ START=$(date +%s)
 echo "****Building****"
 
 make shooter_defconfig
-make -j9 CROSS_COMPILE=/home/jmz/evgerrit/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
+make -j9 CROSS_COMPILE=$CROSS_COMPILE
 
 echo "****Creating boot image****"
 mkdir output/system
